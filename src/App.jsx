@@ -1,8 +1,13 @@
 import React from 'react';
+import { Header, Footer } from './layout';
 
 function App() {
     return (
-      <h1>Music App</h1>
+      <>
+        <Header />
+        <h1>Music App</h1>
+        <Footer />
+      </>
     );
 }
 
