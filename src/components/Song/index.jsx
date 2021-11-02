@@ -1,10 +1,10 @@
 import React from "react";
 
-export const Song = ({ songs }) => {
+export const Song = ({ songsArray }) => {
     return (
         <ul>
             {
-                songs.map(song => (
+                songsArray.map(song => (
                     <li>
                         <strong role="heading" aria-label="headline">{song}</strong>
                     </li>

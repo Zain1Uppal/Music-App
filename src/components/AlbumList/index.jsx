@@ -1,6 +1,6 @@
 import React from "react";
 import { LikesCount } from '../LikesCount';
-// import { Song } from "../Song";
+import { Song } from "../Song";
 
 export const AlbumList = ({ albums }) => {
     return (
@@ -8,7 +8,7 @@ export const AlbumList = ({ albums }) => {
             {
                 albums.map(album => (
                     <li key={album.id}>
-                        <strong role="heading" aria-label="headline">{album.album}</strong> {album.date} <LikesCount /> {album.songsArray}
+                        <strong role="heading" aria-label="headline">{album.album}</strong> {album.date} <LikesCount /> <Song songsArray={album.songsArray} />
                     </li>
                 ))
             }
