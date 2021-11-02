@@ -4,7 +4,7 @@ import { Album } from '.';
 import imagePath from '../../static/image.png';
 
 export default {
-    title: 'Album',
+    title: 'Components/Album',
     component: Album,
     argTypes: {
         name: {
@@ -36,10 +36,3 @@ firstAlbum.args = {
     releaseDate: '27/10/2019',
     coverArt: Image()
 }
-
-// export const Large = Template.bind({});
-// Large.args = {
-//     size: 'large',
-//     title: 'Another post',
-//     author: 'Me'
-// }
