@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Album } from '.';
-import imagePath from '../../static/image.png';
 
 export default {
     title: 'Components/Album',
@@ -14,25 +12,18 @@ export default {
             control: 'text'
         },
         coverArt: {
-            control: 'img'
+            control: 'text'
         }
     }
 }
 
-const image = {
-    src: imagePath,
-    alt: 'my image',
-};
-
 const Template = args => <Album {...args} />
 
 export const Default = Template.bind({});
-
-export const Image = () => <img src={image.src} alt={image.alt} />;
-
-export const firstAlbum = Template.bind({});
-firstAlbum.args = {
-    name: 'album 1',
-    releaseDate: '27/10/2019',
-    coverArt: Image()
+Default.args = {
+    albums: [
+        { id: 1, album: 'Album 1', releaseDate: '10-10-2017', img: 'https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640' },
+        { id: 2, album: 'Album 2', releaseDate: '11-10-2017', img: 'https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640' },
+        { id: 3, album: 'Album 3', releaseDate: '12-10-2017', img: 'https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640' },
+    ]
 }

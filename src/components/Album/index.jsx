@@ -1,14 +1,13 @@
 import React from "react";
 
-import './style.css';
-
-export const Album = ({ name, releaseDate, coverArt }) => {
+export const Album = ({ albums }) => {
     return (
-        <div>
-            <p>Album</p>
-            <h3>{name}</h3>
-            <em>Released on: {releaseDate}</em>
-            <p>Cover {coverArt}</p>
-        </div>
+        albums.map(album => (
+            <div>
+                <h3>{album.album}</h3>
+                <em>Released on: {album.releaseDate}</em>
+                <img src={album.img} />
+            </div>
+        ))
     )
 };
