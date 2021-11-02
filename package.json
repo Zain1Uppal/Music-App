@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "jest --env=jsdom --watch --setupFilesAfterEnv ./src/texst/setupTests.js",
     "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
-    "build": "webpack --mode production",
+    "build": "webpack --config config/webpack.config.prod.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
