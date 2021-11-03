@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Album } from '../Album';
 import { Song } from '../Song';
 
-export const SeeMore = ({ songsArray }) => {
+export const SeeMore = ({ album, songsArray }) => {
     const [seeMore, setSeeMore] = useState(false);
 
     function seeSongs() {
@@ -15,6 +16,7 @@ export const SeeMore = ({ songsArray }) => {
                 role="switch"
             >See More...</button>
             <div style={{ display: seeMore ? 'block' : 'none' }}>
+                <Album album={album} />
                 <Song songsArray={songsArray} />
             </div>
         </>

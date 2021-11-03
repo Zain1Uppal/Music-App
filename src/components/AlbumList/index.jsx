@@ -10,7 +10,7 @@ export const AlbumList = ({ albums }) => {
                     <li key={album.id}>
                         <strong role="heading" aria-label="headline">{album.album}</strong> {album.date}
                         <LikesCount />
-                        <SeeMore songsArray={album.songsArray} />
+                        <SeeMore album={album} songsArray={album.songsArray} />
                     </li>
                 ))
             }

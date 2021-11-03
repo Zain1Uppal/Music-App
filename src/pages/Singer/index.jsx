@@ -16,7 +16,6 @@ export const Singer = () => {
             <h1>Billie Eilish</h1>
             <section>
                 <AlbumList albums={albums} />
-                <Album albums={albums} />
             </section>
         </div>
     )
