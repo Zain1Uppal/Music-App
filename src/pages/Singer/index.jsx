@@ -3,6 +3,7 @@ import { AlbumList } from '../../components';
 import album1 from '../../images/2017-album.png';
 import album2 from '../../images/2019-album.png';
 import album3 from '../../images/2021-album.jpg';
+import './style.css';
 
 export const Singer = ({ songTitle }) => {
     const [albums] = useState([
@@ -12,8 +13,9 @@ export const Singer = ({ songTitle }) => {
     ])
 
     return (
-        <div class="singer-info">
+        <div class="albumInfo">
             <h1>Albums</h1>
+            <h3>List of her albums</h3>
             <section>
                 <AlbumList albums={albums} />
             </section>

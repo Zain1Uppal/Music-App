@@ -14,6 +14,7 @@ export const SeeMore = ({ album, songsArray }) => {
             <button
                 onClick={seeSongs}
                 role="switch"
+                style={{ backgroundColor: seeMore ? '#79B4B7' : '#9D9D9D' }}
             >See More...</button>
             <div style={{ display: seeMore ? 'block' : 'none' }}>
                 <Album album={album} />
