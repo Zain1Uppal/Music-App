@@ -15,7 +15,7 @@ export const SeeMore = ({ album, songsArray }) => {
                 onClick={seeSongs}
                 role="switch"
             >See More...</button>
-            <div style={{ display: seeMore ? 'block' : 'none' }}>
+            <div role="seeMore" style={{ display: seeMore ? 'block' : 'none' }}>
                 <Album album={album} />
                 <Song songsArray={songsArray} handleSelect={setSeeMore} songTitle={songsArray[1]} />
             </div>

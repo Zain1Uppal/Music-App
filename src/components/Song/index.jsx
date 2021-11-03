@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
-export const Song = ({ songsArray, handleSelect, songTitle }) => {
+export const Song = ({ songsArray, songTitle }) => {
     const [lyrics, setLyrics] = useState();
     const [statusMessage, setStatusMessage] = useState('Loading');
 
