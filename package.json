@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --verbose --setupFilesAfterEnv ./src/test/setupTests.js",
-    "coverage": "jest --setupFilesAfterEnv ./src/test/setupTests.js --coverage --silent --watchAll=false",
+    "test": "jest --env=jsdom --watch --verbose --setupFilesAfterEnv ./src/test/setupTests.js",
+    "coverage": "jest --env=jsdom --setupFilesAfterEnv ./src/test/setupTests.js --coverage --silent --watchAll=false",
     "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
     "build": "webpack --config config/webpack.config.prod.js",
     "storybook": "start-storybook -p 6006",
@@ -47,6 +47,7 @@
     "webpack-dev-server": "^4.4.0"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

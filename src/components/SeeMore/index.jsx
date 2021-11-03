@@ -17,7 +17,7 @@ export const SeeMore = ({ album, songsArray }) => {
             >See More...</button>
             <div style={{ display: seeMore ? 'block' : 'none' }}>
                 <Album album={album} />
-                <Song songsArray={songsArray} />
+                <Song songsArray={songsArray} handleSelect={setSeeMore} songTitle={songsArray[1]} />
             </div>
         </>
     )

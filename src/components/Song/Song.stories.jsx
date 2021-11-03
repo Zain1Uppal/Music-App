@@ -5,6 +5,10 @@ export default {
     title: 'Components/Song',
     component: Song,
     argTypes: {
+        handleSelect: {
+            action: 'clicked',
+            description: 'Callback function'
+        },
         songsArray: {
             control: 'array',
             description: 'Array of songs in each album'
