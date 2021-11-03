@@ -29,7 +29,6 @@ export const LikesCount = () => {
                 role="switch"
                 style={{ backgroundColor: liked ? 'green' : 'grey' }}
             >Like!</button>
-            <span style={{ display: liked ? 'block' : 'none' }}>*</span>
             <p>Number of likes: <span role="figure" id="likes">{likesCount}</span></p>
         </>
     )

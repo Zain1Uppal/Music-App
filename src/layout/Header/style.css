@@ -1,4 +1,25 @@
-.active {
-    color: red;
-    font-weight: bolder;
+nav {
+    width: 100vw;
+    position: fixed;
+    background-color: #F8F0DF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: -10px;
+}
+
+a {
+    color: #9D9D9D;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #79B4B7;
+}
+
+.active a {
+    color: #79B4B7;
 }
