@@ -13,7 +13,7 @@ export const Singer = ({ songTitle }) => {
 
     return (
         <div class="singer-info">
-            <h1>Billie Eilish</h1>
+            <h1>Albums</h1>
             <section>
                 <AlbumList albums={albums} />
             </section>
