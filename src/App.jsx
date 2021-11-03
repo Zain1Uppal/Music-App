@@ -11,9 +11,6 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          <Pages.Home />
-        </Route>
-        <Route path="/about">
           <Pages.About />
         </Route>
         <Route path="/albums">

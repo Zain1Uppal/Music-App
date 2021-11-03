@@ -23,14 +23,13 @@ export const LikesCount = () => {
     }
 
     return (
-        <>
+        <div className="likeContainer">
             <button
                 onClick={count}
                 role="switch"
-                style={{ backgroundColor: liked ? 'green' : 'grey' }}
+                style={{ backgroundColor: liked ? '#79B4B7' : 'grey' }}
             >Like!</button>
-            <span style={{ display: liked ? 'block' : 'none' }}>*</span>
-            <p>Number of likes: <span role="figure" id="likes">{likesCount}</span></p>
-        </>
+            <p id="likePhrase">Number of likes: <span role="figure" id="likes">{likesCount}</span></p>
+        </div>
     )
 }

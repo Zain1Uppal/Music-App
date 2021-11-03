@@ -10,6 +10,7 @@ export const Song = ({ songsArray, songTitle }) => {
             setStatusMessage('Loading lyrics');
             try {
                 let { data } = await axios.get(`https://api.lyrics.ovh/v1/Billie Eilish/${songTitle}`);
+                // let lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '\n');
                 setLyrics(data.lyrics);
                 setStatusMessage('');
             } catch (err) {
@@ -25,7 +26,7 @@ export const Song = ({ songsArray, songTitle }) => {
             <ul>
                 {
                     songsArray.map(song => (
-                        <li key={song} onClick={() => handleSelect(song)}>
+                        <li className="songList" key={song} onClick={() => handleSelect(song)}>
                             <strong role="heading" aria-label="headline">{song}</strong>
                             <p>{statusMessage ? statusMessage : lyrics}</p>
                         </li>
